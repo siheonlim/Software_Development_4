@@ -1,0 +1,202 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #34495e;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+.react-datepicker-wrapper input {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+.react-datepicker-wrapper input:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1c598a;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-row > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+li div {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="date"],
+    .react-datepicker-wrapper input {
+        width: 100%;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.signUpBox {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.signUpBox h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.signUpBox div {
+    margin-bottom: 15px;
+}
+
+.signUpBox input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #ecf0f1;
+}
+
+.signUpBox input[type="text"]:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.signUpBox button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signUpBox button:hover {
+    background-color: #2980b9;
+}
+
+.signUpBox button:active {
+    background-color: #1c598a;
+}
